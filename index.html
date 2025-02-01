@@ -31,6 +31,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-bg': '#EFEBE3',
+                        'primary-text': '#179800',
                     }
                 }
             }
@@ -41,7 +43,8 @@
 <body class="sora-fonts">
     <!-- For using nav and banner -->
     <header class="bg-gradient-to-b from-white to-[#efebe3] lg:pt-6">
-        <!-- nav -->
+        <!-- navbar -->
+         <nav>
         <div class="navbar container mx-auto border-solid lg:border-none">
             <div class="navbar-start">
                 <img class="lg:flex" src="./c2-assets/logo-header.png" alt="logo" />
@@ -78,8 +81,8 @@
         <div class="overflow-hidden container mx-auto lg:hidden mt-0">
             <hr class="h-1 bg-[#179800]">
         </div>
+    </nav>
         <!-- banner -->
-
         <div class="overflow-hidden container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24">
             <div class="text-center px-7 text-[#111111] space-y-4 lg:space-y-8">
                 <h1 class="text-[32px] lg:text-[56px] font-semibold">
@@ -96,6 +99,210 @@
     </header>
     <!-- All sections will be here in main -->
     <main>
+      <!-- Services Start -->
+      <div class="container mx-auto my-12 lg:my-36 px-4 lg:px-4 flex flex-col lg:flex">
+        <h3 class="text-primary-text font-semibold text-[24px] lg:text-[36px]">
+            Services
+        </h3>
+        <div class="mt-8 lg:mt-11 grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- card-1 -->
+            <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6">
+                <div class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white">
+                    <img src="c2-assets/service.png" alt="service logo" />
+                </div>
+                <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    24/7 Services
+                </h3>
+                <p class="text-[16px] font-light opacity-70 text">
+                    24/7 services provide continuous, round-the-clock support, ensuring availability and convenience anytime needed.
+                </p>
+            </div>
+            <!-- card-2 -->
+            <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6">
+                <div class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white">
+                    <img src="c2-assets/delivery.png" alt="fast delivery logo" />
+                </div>
+                <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    Fast Delivery
+                </h3>
+                <p class="text-[16px] font-light opacity-70 text">
+                    Fast delivery ensures quick, efficient, and timely shipping, enhancing customer satisfaction and convenience.
+                </p>
+            </div>
+            <!-- card-3 -->
+            <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6">
+                <div class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white">
+                    <img src="c2-assets/healthy.png" alt="healty product logo" />
+                </div>
+                <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    Healthy Products
+                </h3>
+                <p class="text-[16px] font-light opacity-70 text">
+                    Healthy products are nutritious, natural, and beneficial for overall well-being, supporting a healthy lifestyle.
+                </p>
+            </div>
+        </div>
+    </div>  
+    <!-- Services End -->
+    <!-- products Start -->
+     <div class="bg-primary-bg">
+        <div class="container mx-auto py-12 lg:py-36 px-4 lg:px-4">
+            <h2 class="text-primary-text font-semibold text-[24px] lg:text-[36px]">
+                Popular Products
+            </h2>
+
+            <div class="pt-8 lg:pt-12 flex flex-col lg:flex-row gap-6">
+                <!-- big card -->
+                <div class="lg:max-w-[30%] rounded-[10px] bg-gradient-to-br from-[#53DB3A] to-white p-8">
+                    <div class="flex flex-col items-start gap-4 lg:gap-8">
+                        <h3 class="f-a text-white font-semibold text-[24px] lg:text-[32px]">
+                            30% Off
+                        </h3>
+                        <p class="text-[#111111] ">
+                            Discover a world of treats, toys, and essentials handpicked for your health.
+                        </p>
+                        <button class="btn px-7 py-2 font-normal text-xl rounded-lg bg-white">
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="relative left-[48px] top-[32px] lg:relative lg:top-[32px] lg:left-[5px] 2xl:relative 2xl:top-[32px] 2xl:left-[85px]">
+                        <img src="c2-assets/vegetable-offer.png" class="lg:w-[271px] w-[300px]" alt="">
+                    </div>
+                </div>
+
+                <!-- small card -->
+                <div class="lg:w-[70%] grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+                    <!-- Onion -->
+                    <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/onion.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Onion 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Tomato -->
+                     <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/tomato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Tomato 500 g
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Potato -->
+                     <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/potato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Potato 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                    <!-- Tomato -->
+                    <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/tomato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Tomato 500 g
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Onion -->
+                    <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/onion.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Onion 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Tomato -->
+                     <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/tomato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Tomato 500 g
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Onion -->
+                    <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/onion.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Onion 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                    <!-- Potato -->
+                    <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/potato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Potato 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                     <!-- Potato -->
+                     <div class="hover:bg-slate-100 rounded-[10px] bg-white p-3 lg:p-4 flex gap-3 lg:gap-4 items-center">
+                        <img class="bg-primary-bg p-2 lg:p-4 rounded-[10px] w-16 lg:w-24" src="c2-assets/potato.png" alt="" />
+                        <div class="flex flex-col gap-1 lg:gap-2">
+                            <div class="flex gap-1 lg:gap-2 items-center">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                <span class="text-[10px] lg:text-[16px] font-normal">4.5</span>
+                            </div>
+                            <h4 class="font-medium text-[12.5px] lg:text-[20px]">
+                                Potato 1 KG
+                            </h4>
+                            <h5 class="font-medium text-[10px] lg:text-[16px]">$39.99</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
 
     </main>
     <!-- For Footer section -->
