@@ -38,9 +38,60 @@
     </script>
 </head>
 
-<body>
+<body class="sora-fonts">
     <!-- For using nav and banner -->
-    <header clas>
+    <header class="bg-gradient-to-b from-white to-[#efebe3] lg:pt-6">
+        <!-- nav -->
+        <div class="navbar container mx-auto border-solid lg:border-none">
+            <div class="navbar-start">
+                <img class="lg:flex" src="./c2-assets/logo-header.png" alt="logo" />
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-xl px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end lg:gap-7">
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost w-[30px] h-[30px] lg:hidden">
+                        <i class="fa-solid fa-bars text-[#179800] text-2xl"></i>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-lg fa-magnifying-glass hidden lg:flex"></i>
+                <i class="fa-solid fa-lg fa-cart-shopping hidden lg:flex"></i>
+                <div class="flex gap-3">
+                    <a class="btn px-7 py-2 font-normal text-xl rounded-lg bg-white border border-[#179800] hidden lg:flex">Login</a>
+                    <a class="btn px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331] hidden lg:flex">Register</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="overflow-hidden container mx-auto lg:hidden mt-0">
+            <hr class="h-1 bg-[#179800]">
+        </div>
+        <!-- banner -->
+
+        <div class="overflow-hidden container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24">
+            <div class="text-center px-7 text-[#111111] space-y-4 lg:space-y-8">
+                <h1 class="text-[32px] lg:text-[56px] font-semibold">
+                    Freshness <span class="text-[#179800]">You Can<br />Count</span> On, Prices You’ll Love!
+                </h1>
+                <p class="text-[16px] font-light opacity-80 lg:text-[20px] lg:font-normal">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+            </div>
+
+            <img src="./c2-assets/hero-vegetables.png" alt="" class="container mx-auto transform transition duration-500 ease-in-out animation-heartbeat" />
+        </div>
 
     </header>
     <!-- All sections will be here in main -->
